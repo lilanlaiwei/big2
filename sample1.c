@@ -4,8 +4,8 @@
 int main(void)
 {
 	FILE *fr, *fw;
-	char t1[] = "sample1.txt";
-	char t2[] = "sample2.txt";
+	char t1[] = "read.txt";
+	char t2[] = "write.txt";
 	char str[256];
 	int chr;
 
