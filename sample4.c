@@ -19,8 +19,7 @@ int main(void) {
 	char pi[MAX_LINE];
 	char str[MAX_LINE];
 	unsigned int count[CHR_NUM];
-	float m = 0;
-	int k = 0, i = 0;
+	int k = 0, i = 0, M = 0;
 
 
 	fr = fopen (t1,"r");
@@ -43,15 +42,17 @@ int main(void) {
 
 	for (unsigned int i = 0; i < CHR_NUM; i++) {
 		if(i >= 'a' && i <= 'z'){
-			m += count[i];
+			M += count[i];
 		}
 	}
 
+	printf("%d\n", M);
+
 	srand((unsigned int)time(NULL));
 
-	for(i = 0; i < 500; i++){
-		k = rand() % M + 1;
-//		printf("%d\n",rand() % M + 1);
+	for(i = 0; i < 10; i++){
+		k = rand() % 10 + 1;
+//		printf("%d\n",rand() %  + 1);
 		fputc(str[k], fw);
 	}
 
