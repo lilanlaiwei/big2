@@ -15,10 +15,8 @@ int main(void) {
 	FILE *fr;
 	char t1[] = "ko.txt";
     	char str[MAX_LINE];
-	char pi[CHR_NUM];
-    	unsigned int count[CHR_NUM];
+  	unsigned int count[CHR_NUM];
 	int m = 0;
-	int moji;
 
 
 	fr = fopen (t1,"r");
